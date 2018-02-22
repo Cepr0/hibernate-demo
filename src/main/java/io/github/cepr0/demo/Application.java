@@ -24,9 +24,11 @@ public class Application {
 		Child child2 = new Child("child2");
 
 		Parent parent1 = new Parent("parent1", asList(child1, child2));
-		em.persist(parent1);
+		
 		em.getTransaction().begin();
+		em.persist(parent1);
 		em.getTransaction().commit();
+		
 		em.close();
 //		emf.close();
 		LOG.info("App stopped.");

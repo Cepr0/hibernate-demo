@@ -9,6 +9,34 @@
         <appender-ref ref="console"/>
     </logger>
 
+    <logger name="org.hibernate.engine.transaction" level="debug" additivity="false">
+        <appender-ref ref="console"/>
+    </logger>
+
+    <logger name="jdbc.sqlonly" level="info" additivity="false">
+        <appender-ref ref="console"/>
+    </logger>
+
+    <logger name="jdbc.resultsettable" level="info" additivity="false">
+        <appender-ref ref="console"/>
+    </logger>
+
+    <logger name="jdbc.sqltiming" level="off" additivity="false">
+        <appender-ref ref="console"/>
+    </logger>
+
+    <logger name="jdbc.audit" level="off" additivity="false">
+        <appender-ref ref="console"/>
+    </logger>
+
+    <logger name="jdbc.resultset" level="off" additivity="false">
+        <appender-ref ref="console"/>
+    </logger>
+
+    <logger name="jdbc.connection" level="off" additivity="false">
+        <appender-ref ref="console"/>
+    </logger>
+
     <root level="error">
         <appender-ref ref="console"/>
     </root>

@@ -35,3 +35,4 @@ fabric.properties
 *.rar
 hs_err_pid*
 /dependency-reduced-pom.xml
+/.idea/

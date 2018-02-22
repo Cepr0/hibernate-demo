@@ -6,14 +6,12 @@
     <persistence-unit name="demo-unit" transaction-type="RESOURCE_LOCAL">
         <description>Hibernate Demo App</description>
 
-        <!--<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
-        <!--<class>io.github.cepr0.demo.model.Parent</class>-->
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect" />
-            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/hibernate-demo" />
+            <property name="javax.persistence.jdbc.driver" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:log4jdbc:postgresql://localhost:5432/hibernate-demo" />
             <property name="javax.persistence.jdbc.user" value="postgres" />
             <property name="javax.persistence.jdbc.password" value="postgres" />
             <property name="hibernate.hbm2ddl.auto" value="create-drop" />
