@@ -14,7 +14,7 @@
             <property name="javax.persistence.jdbc.url" value="jdbc:log4jdbc:postgresql://localhost:5432/hibernate-demo" />
             <property name="javax.persistence.jdbc.user" value="postgres" />
             <property name="javax.persistence.jdbc.password" value="postgres" />
-            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+            <property name="hibernate.hbm2ddl.auto" value="validate" />
         </properties>
     </persistence-unit>
 </persistence>

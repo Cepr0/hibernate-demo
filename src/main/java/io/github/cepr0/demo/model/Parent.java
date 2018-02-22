@@ -43,8 +43,13 @@ public class Parent implements Serializable {
 	@Column(columnDefinition = "jsonb")
 	private List<Child> children;
 
-	public Parent(String name, List<Child> children) {
+	@Type(type = "string-array")
+	@Column(columnDefinition = "text[]")
+	private String[] phones;
+
+	public Parent(String name, List<Child> children, String... phones) {
 		this.name = name;
 		this.children = children;
+		this.phones = phones;
 	}
 }

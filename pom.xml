@@ -98,6 +98,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!--Log colorize-->
+
+        <dependency>
+            <groupId>org.tuxdude.logback.extensions</groupId>
+            <artifactId>logback-colorizer</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
